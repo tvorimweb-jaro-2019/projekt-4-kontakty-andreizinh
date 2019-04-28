@@ -8,3 +8,82 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+h1 {
+	text-align: center;
+	margin: 20px;
+	font-size: 20px;
+}
+.tym {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px;
+	padding: 10px;
+	
+}
+
+.clenka {
+	text-align: center;
+	padding: 20px;
+	margin: 15px;
+	border: 1px solid grey;
+	border-radius: 8px;
+	box-shadow: 1px 1px 2px darkgrey;
+}
+
+.foto {
+	border-radius: 50%;
+}
+
+@media (min-width: 540px) {
+	.tym {
+		justify-content: space-between;
+	}
+
+	.clenka {
+		display: flex;
+		flex-direction: row;
+		text-align: left;
+		justify-content: space-between;
+		width: calc(50% - 30px);
+	}
+	.foto {
+		height: 80px;
+		margin-right: 10px;
+	}
+
+	.jmeno {
+		font-size: 15px;
+	}
+
+	.profil {
+		margin-left: 10px;
+	}
+}
+
+@media (min-width: 960px) {
+	.tym {
+		flex-wrap: nowrap;
+	}
+
+	.clenka {
+		display: block;
+		text-align: center;
+		flex-wrap: nowrap;
+		width: 25%;
+	}
+
+	.foto {
+		width: auto;
+	}
+
+	.profil {
+		margin-left: 0;
+	}
+
+	.jmeno {
+		font-size: 14px;
+	}
+}
